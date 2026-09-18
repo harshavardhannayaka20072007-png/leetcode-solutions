@@ -1,0 +1,5 @@
+*.exe
+.vscode/
+**/output/
+**/*.obj
+**/*.o
