@@ -1,53 +1,35 @@
-# Valid Anagram
+# 03. Valid Anagram
 
+**Difficulty:** Easy  
+**Category:** Arrays & Strings  
 **LeetCode:** https://leetcode.com/problems/valid-anagram/
 
-This program checks whether two input strings are anagrams of each other.
+## Problem
 
-## Problem Overview
+Given two strings, determine whether they are anagrams of each other.
 
-Two strings are anagrams if they contain the same characters in the same frequencies, but possibly in different orders.
+## Approach
 
-Example:
-
-- `listen` and `silent` are anagrams
-- `hello` and `world` are not
-
-## How the Program Works
-
-1. The program reads two strings from the user.
-2. It removes the newline characters from both inputs.
-3. It compares the lengths first. If they are different, the strings cannot be anagrams.
-4. It uses a frequency array to count characters in the first string.
-5. It subtracts the counts of the second string.
-6. If all values in the frequency array are zero, the strings are anagrams.
+Count the frequency of each character in the first string and subtract the frequency of each character in the second string. If all counts are zero, the strings are valid anagrams.
 
 ## Example
 
 Input:
-
 ```text
-Enter first string: listen
-Enter second string: silent
+s = "anagram"
+t = "nagaram"
 ```
 
 Output:
-
 ```text
-Anagram.
+true
 ```
 
-## Time Complexity
+## Complexity
 
-- `O(n)`
+- Time: O(n)
+- Space: O(1) for a fixed alphabet size
 
-## Space Complexity
+## Solution File
 
-- `O(1)` for the fixed-size frequency array (assuming ASCII characters)
-
-## Compile and Run
-
-```bash
-gcc 03-valid-anagram.c -o 03-valid-anagram
-./03-valid-anagram
-```
+- [03-valid-anagram.c](03-valid-anagram.c)

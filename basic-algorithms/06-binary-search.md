@@ -1,38 +1,35 @@
-# Binary Search
+# 06. Binary Search
 
+**Difficulty:** Easy  
+**Category:** Basic Algorithms  
 **LeetCode:** https://leetcode.com/problems/binary-search/
 
-This program searches for a target value in a sorted array using binary search.
+## Problem
 
-## Problem Overview
+Search for a target value in a sorted array and return its index.
 
-Binary search repeatedly divides the search range in half until the target is found or the range becomes empty.
+## Approach
 
-## How the Program Works
-
-1. The program sets `left` to the start of the array and `right` to the end.
-2. It finds the middle element.
-3. If the middle element is the target, it returns its index.
-4. If the target is smaller, it searches the left half.
-5. If the target is larger, it searches the right half.
+Use a left and right pointer. Compute the middle index and move the search range left or right depending on the target comparison.
 
 ## Example
 
+Input:
 ```text
-Target found at index 3
+nums = [-1, 0, 3, 5, 9, 12]
+target = 9
 ```
 
-## Time Complexity
-
-- `O(log n)`
-
-## Space Complexity
-
-- `O(1)`
-
-## Compile and Run
-
-```bash
-gcc 06-binary-search.c -o 06-binary-search
-./06-binary-search
+Output:
+```text
+4
 ```
+
+## Complexity
+
+- Time: O(log n)
+- Space: O(1)
+
+## Solution File
+
+- [06-binary-search.c](06-binary-search.c)

@@ -25,9 +25,9 @@ Completed: 8 problems
 
 ## Notes
 
-- The repository currently contains working C solutions for the completed problems.
-- Each solved item includes a source file and a brief markdown explanation.
-- The linked-lists section is still empty and will be filled as new problems are added.
+- All current solution files and markdown notes are added and organized by category.
+- The repository is ready for additional LeetCode problems and future tracking.
+- The linked-lists section remains a placeholder for future additions.
 
 ## Last Updated
 

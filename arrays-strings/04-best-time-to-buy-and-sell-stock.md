@@ -1,43 +1,34 @@
-# Best Time to Buy and Sell Stock
+# 04. Best Time to Buy and Sell Stock
 
+**Difficulty:** Easy  
+**Category:** Arrays & Strings  
 **LeetCode:** https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 
-This program calculates the maximum profit that can be made from a single stock transaction.
+## Problem
 
-## Problem Overview
+Find the maximum profit by buying and selling a stock once.
 
-Given an array of prices, you can buy on one day and sell on a later day. The goal is to maximize the profit.
+## Approach
 
-Example:
-
-- Input prices: `[7, 1, 5, 3, 6, 4]`
-- Maximum profit: `5`
-
-## How the Program Works
-
-1. The program keeps track of the lowest price seen so far.
-2. For each price, it calculates the profit if the stock were sold today.
-3. It updates the best profit whenever a better opportunity is found.
-4. Finally, it prints the maximum profit.
+Track the minimum price seen so far. For each day, compute the profit if sold on that day and keep the maximum profit found.
 
 ## Example
 
+Input:
 ```text
-Test 1 profit: 5
-Test 2 profit: 0
+prices = [7, 1, 5, 3, 6, 4]
 ```
 
-## Time Complexity
-
-- `O(n)`
-
-## Space Complexity
-
-- `O(1)`
-
-## Compile and Run
-
-```bash
-gcc 04-best-time-to-buy-and-sell-stock.c -o 04-best-time-to-buy-and-sell-stock
-./04-best-time-to-buy-and-sell-stock
+Output:
+```text
+5
 ```
+
+## Complexity
+
+- Time: O(n)
+- Space: O(1)
+
+## Solution File
+
+- [04-best-time-to-buy-and-sell-stock.c](04-best-time-to-buy-and-sell-stock.c)
